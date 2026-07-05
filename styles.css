@@ -1,0 +1,358 @@
+/* ==========================
+   基础设置
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:
+    "Yu Gothic",
+    "Hiragino Sans",
+    "Meiryo",
+    sans-serif;
+
+    background:#f5f8fc;
+
+    color:#333;
+
+    line-height:1.6;
+
+}
+
+
+/* ==========================
+   Header
+========================== */
+
+header{
+
+    background:#005bac;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px 15px;
+
+}
+
+.logo h2{
+
+    font-size:30px;
+
+}
+
+.logo p{
+
+    margin-top:8px;
+
+    font-size:15px;
+
+}
+
+
+/* ==========================
+   Banner
+========================== */
+
+.hero{
+
+    background:white;
+
+    text-align:center;
+
+    padding:45px 20px;
+
+}
+
+.hero h1{
+
+    color:#e60012;
+
+    font-size:42px;
+
+    margin-bottom:18px;
+
+}
+
+.hero p{
+
+    color:#555;
+
+    font-size:18px;
+
+}
+
+
+/* ==========================
+   回収日
+========================== */
+
+.date{
+
+    margin:25px;
+
+    text-align:center;
+
+}
+
+.date h2{
+
+    color:#005bac;
+
+    margin-bottom:15px;
+
+}
+
+.date-box{
+
+    display:inline-block;
+
+    background:white;
+
+    border:3px solid #005bac;
+
+    border-radius:12px;
+
+    padding:16px 40px;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    margin-bottom:15px;
+
+}
+
+
+/* ==========================
+   分类
+========================== */
+
+.category{
+
+    margin:35px 20px;
+
+}
+
+.category h2{
+
+    background:#005bac;
+
+    color:white;
+
+    padding:12px;
+
+    border-radius:8px;
+
+    margin-bottom:18px;
+
+}
+
+
+/* ==========================
+   图标排列
+========================== */
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(2,1fr);
+
+    gap:18px;
+
+}
+
+
+/* ==========================
+   卡片
+========================== */
+
+.card{
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:18px;
+
+    text-align:center;
+
+    box-shadow:
+
+    0 4px 12px rgba(0,0,0,.08);
+
+    transition:.25s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+
+    0 8px 20px rgba(0,0,0,.15);
+
+}
+
+
+/* ==========================
+   图标
+========================== */
+
+.card img{
+
+    width:60px;
+
+    height:60px;
+
+    margin-bottom:10px;
+
+}
+
+.card span{
+
+    display:block;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+}
+
+
+/* ==========================
+   联系方式
+========================== */
+
+.contact{
+
+    margin:40px 20px;
+
+    text-align:center;
+
+}
+
+.contact h2{
+
+    color:#005bac;
+
+    margin-bottom:18px;
+
+}
+
+.contact a{
+
+    display:block;
+
+    width:260px;
+
+    margin:12px auto;
+
+    padding:14px;
+
+    text-decoration:none;
+
+    color:white;
+
+    background:#005bac;
+
+    border-radius:40px;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    transition:.25s;
+
+}
+
+.contact a:hover{
+
+    background:#00418b;
+
+}
+
+
+/* ==========================
+   Footer
+========================== */
+
+footer{
+
+    margin-top:40px;
+
+    background:#005bac;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+}
+
+footer p{
+
+    margin:6px;
+
+}
+
+
+/* ==========================
+   平板
+========================== */
+
+@media(min-width:768px){
+
+.grid{
+
+grid-template-columns:
+
+repeat(3,1fr);
+
+}
+
+.hero h1{
+
+font-size:54px;
+
+}
+
+}
+
+
+/* ==========================
+   PC
+========================== */
+
+@media(min-width:1200px){
+
+.grid{
+
+grid-template-columns:
+
+repeat(4,1fr);
+
+}
+
+body{
+
+max-width:1400px;
+
+margin:auto;
+
+background:#eef3f8;
+
+}
+
+}
